@@ -1,7 +1,7 @@
 # Easy Crontab
 > only works with bash and zsh on unix (linux and mac).  
 
-A python library to rapidly add and remove and view crontab jovs in unix (linnux and mac).
+A python library to rapidly add and remove and view crontab jovs in unix (linux and mac).
 [ [PyPi Link](https://pypi.org/project/easy-cron/0.1/) ]
 
 
