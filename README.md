@@ -3,40 +3,46 @@
 
 A python library to rapidly set, get, and view local environment variables (currently only for bash and zsh shells in unix).
 
-[ [PyPi Link](https://pypi.org/project/easy-environment/0.1/) ]
+[ [PyPi Link](https://pypi.org/project/easy-cron/0.1/) ]
 
 
 ### Example Usage Below
 
 ```
-import easy_environment as environ
+import easy_cron as cron
 
 
 """ 
-get env dict
+get cron list
 ================
  - input  : None
- - output : list[dict]
+ - output : list[list]
 """
-env_dict = environ.get_env_dict()
+cron = cron.get_cron_list()
 
 
 """ 
-get env var
+add job
 ================
- - input  : (str) key
- - output : (str) value
+ - input  : (dict) schedule   # keys ["minute", "hour, "day_monthly", "month", "day_weekly"]
+            (str)  command  
+ - output : None
 """
-env_dict = environ.get_env("EXAMPLE_KEY")
-
+command  = "python3 example.py"
+schedule = {
+    "minute"       : , 
+    "hour          : , 
+    "day_monthly"  : , 
+    "month"        : , 
+    "day_weekly"   : ,
+}
+cron.add_job(schedule, command)
 
 """ 
-set env var
+remove job
 ================
- - input  : (str) key, 
-            (str) value
- - output : list[dict]
+ - input  : (str) command, 
+ - output : None
 """
-# set env var -> None
-env_dict = environ.set_env_var("EXAMPLE_KEY", "EXAMPLE_VALUE)
+cron.remove_job(""python3 example.py)
 ```
