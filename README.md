@@ -1,8 +1,7 @@
-# Easy Environment
+# Easy Crontab
 > only works with bash and zsh on unix (linux and mac).  
 
-A python library to rapidly set, get, and view local environment variables (currently only for bash and zsh shells in unix).
-
+A python library to rapidly add and remove and view crontab jovs in unix (linnux and mac).
 [ [PyPi Link](https://pypi.org/project/easy-cron/0.1/) ]
 
 
